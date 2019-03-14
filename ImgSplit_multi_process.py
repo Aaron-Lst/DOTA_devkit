@@ -288,7 +288,7 @@ if __name__ == '__main__':
     # print("Time used:", elapsed)
 
     split = splitbase(r'/home/opt603/dota/data/val',
-                       r'/home/opt603/data/dota/valsplit',
+                       r'/home/opt603/dota/data/valsplit',
                       gap=200,
                       subsize=1024,
                       num_process=8
