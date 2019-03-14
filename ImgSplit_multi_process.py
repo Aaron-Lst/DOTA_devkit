@@ -86,9 +86,9 @@ class splitbase():
             os.mkdir(self.outpath)
         if not os.path.isdir(self.outimagepath):
             # pdb.set_trace()
-            os.mkdir(self.outimagepath)
+            os.mkdirs(self.outimagepath)
         if not os.path.isdir(self.outlabelpath):
-            os.mkdir(self.outlabelpath)
+            os.mkdirs(self.outlabelpath)
         # pdb.set_trace()
     ## point: (x, y), rec: (xmin, ymin, xmax, ymax)
     # def __del__(self):
