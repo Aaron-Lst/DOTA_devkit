@@ -72,9 +72,9 @@ class splitbase():
         self.slide = self.subsize - self.gap
         self.thresh = thresh
         self.imagepath = os.path.join(self.basepath, 'images')
-        self.labelpath = os.path.join(self.basepath, 'labelTxt-v1.5', 'DOTA-v1.5_val_hbb')
+        self.labelpath = os.path.join(self.basepath, 'labelTxt-v1.5', 'DOTA-v1.5_train_hbb')
         self.outimagepath = os.path.join(self.outpath, 'images')
-        self.outlabelpath = os.path.join(self.outpath, 'labelTxt-v1.5', 'DOTA-v1.5_val_hbb')
+        self.outlabelpath = os.path.join(self.outpath, 'labelTxt-v1.5', 'DOTA-v1.5_train_hbb')
         self.choosebestpoint = choosebestpoint
         self.ext = ext
         self.padding = padding
@@ -287,8 +287,8 @@ if __name__ == '__main__':
     # elapsed = (time.clock() - start)
     # print("Time used:", elapsed)
 
-    split = splitbase(r'/home/opt603/dota/data/val',
-                       r'/home/opt603/dota/data/valsplit',
+    split = splitbase(r'/home/opt603/dota/data/train',
+                       r'/home/opt603/dota/data/trainsplit',
                       gap=200,
                       subsize=1024,
                       num_process=8
